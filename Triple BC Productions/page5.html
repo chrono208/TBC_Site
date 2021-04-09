@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+    <html>
+
+        
+    <!-- Contain body in middle of screen. -->
+        <div class="theNeverEndingBody">
+
+    <!-- Header and title. -->
+        <head>
+    <!-- Navigation Bar Icon. -->
+        <div class="nav2">
+            <a>
+            <span class="openButton" onclick="openNav()" id="menu">
+                <img src="Images/TBC2.3.jpg" alt="Logo Navigation" id="logo2" />
+            </span>
+            </a>
+        </div>
+
+    <!-- CSS and Title. -->
+            <link href="CSS/tbc.css" rel="stylesheet" type="text/css">
+                <title>Triple BC Productions</title>
+        </head>
+
+    <!-- Main Body. -->
+    <body>
+<br>        
+        
+    <!-- Company Logo. -->
+        <img src="Images/TBC_Logo.jpg" alt="Logo" id="logo1"/> 
+            
+    <!-- Header row. -->
+        <hr width="75%">
+
+    <!-- Navigstion Bar overlay. -->
+        <div id="nav" class="overlay">
+            <a href="#" class="closeButton" onclick="closeNav()">X</a>
+                <div class="overlayContent">
+                    <a href="index.html">Home</a>
+                    <a href="page2.html">Grids</a>
+                    <a href="page3.html">Services</a>
+                    <a href="page4.html">Contact Me</a>
+                    <a href="page5.html">About Me</a>
+                    <a href="page6.html">Coming Soon</a>
+                </div>
+        </div>
+        
+
+            
+    <!-- JavaScript Reference. -->
+        <script src="JavaScript/tbc.js"></script>
+    <!-- Grid Container. -->
+        
+        <center>
+            <div class="indexWrapper">  
+                <div class="displayContainer slidez">
+                    <img class="blurrSlide" src="Images/justTheTip.jpg" style="width:100%">
+                        <div class="displayMid">
+                            A brief history about me.
+                        </div>  
+                    </div>
+                <div class="displayContainer slidez">
+                    <img class="blurrSlide" src="Images/bp.jpg" style="width:100%">
+                        <div class="displayMid">
+                            <h5>Early Life</h5>
+                            I spent my early years of life developing hardware skills on computers, their networks and general maintenance including self-reliant trobuleshooting
+                            as well as developing a fierce work ethic and moral guidelines used to accomplish tasks.
+                        </div>
+                    </div>
+                <div class="displayContainer slidez">
+                    <img class="blurrSlide" src="Images/sunset.jpg" style="width:100%">
+                    <div class="displayMid">
+                        <h5>To the jack go the trades.</h5>
+                        I have spent a great majority of my life learning multiple skills, though, none can be considered mastered nor directly relevent between each other.<br />
+                        My highest developed skills are coding, problem solving, story telling, gaming, critical thinking, conscience longevity and stability, gaming,
+                        air traffic control, trouble shooting, bushcraft survival, first aid, team leadership, firefighting, dog training and a plethora of random skills used to adapt to situations.
+                    </div>
+                </div>
+                <div class="displayContainer slidez">
+                    <img class="blurrSlide" src="Images/steppingStone.jpg" style="width:100%">
+                        <div class="displayMid">
+                            <h5>But what about the now?</h5>
+                            Glad you asked. Currently I am atteninding Montgomery Community College attempting my Computer Science degree. Whe I have free time I watch videos and tutorials constantly 
+                            to better improve my skills. Mostly I keep my Photoshop, Html, Gaming, and Java coding skills the most up to date and muscle reflexive. Completed projects include
+                            A Madlib program, the Triple BC Logo, and This website.
+                        </div>
+                    </div>
+                
+    <!-- Buttons with aski pagination. -->
+                    <button class="previousButton" onclick="slidePics(-1)">&#10094;</button>
+                    <button class="nextButton" onclick="slidePics(1)">&#10095;</button>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                manualCycle(slideIndex);
+
+                function slidePics(num) {
+                manualCycle(slideIndex += num);
+                }
+
+            function manualCycle(num) {
+              var index;
+              var pics = document.getElementsByClassName("slidez");
+              if (num > pics.length) {
+                  slideIndex = 1
+                    }    
+              if (num < 1) {
+                  slideIndex = pics.length
+                    }
+              for (index = 0; index < pics.length; index++) {
+                 pics[index].style.display = "none";  
+              }
+              pics[slideIndex-1].style.display = "block";  
+}           
+            </script>
+        </center>
+    </body>
+     
+    <!-- Header row. Everything underneath will be to close out remaining content and promote indicated creator. -->
+        <hr width="75%">
+            
+
+    <!-- Shameless self promotion. Educational purposes only. -->
+        <footer>            
+       <center>
+            <p>
+            Triple BC Productions
+            </p>
+                <p>
+                Contact information: 
+                <a href="mailto:chrono208@aim.com">Chrono208@aim.com</a>.
+                </p>
+            <a href="https://www.twitch.tv/chrono208">
+                <img src="Images/twitchIcon.jpg" class="icon icon-twitch" alt="Twitch Icon"/>
+            </a>
+            <a href="https://www.facebook.com/chrono208">
+                <img src="Images/facbookIcon.jpg" class="icon icon-facebook" alt="Facebook Icon"/>
+            </a>
+            <a href="https://www.youtube.com/user/firebird208/featured?view_as=subscriber">
+                <img src="Images/youtubeeIcon.jpg" class="icon icon-youtube" alt="Youtube Icon"/>
+            </a>
+            <a>
+                <img src="Images/twitterIcon.jpg" class="icon icon-twitter" alt="Twitter Icon"/>
+            </a>
+            <a href="#">
+                <img src="Images/snapIcon.jpg" class="icon icon-snap" alt="Snapchat Icon"/>
+            </a>
+            <a href="https://www.linkedin.com/in/bryan-clark-77a552ab/">
+                <img src="Images/linkedIcon.jpg" class="icon icon-linked" alt="Linkedin Icon"/>
+            </a>
+            <a href="#">
+                <img src="Images/spotifyIcon.jpg" class="icon icon-spotify"  alt="Spotify Icon"/>       
+            </a>
+            </center>
+    </footer>    
+    </div>
+</html>

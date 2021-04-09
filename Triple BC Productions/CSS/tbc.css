@@ -1,0 +1,693 @@
+/* Body Style */
+body {
+    height: 100%; /* Maintain body height integrity. */
+    background: #D3BB96; /* Add white background to center content. */
+    border: 10px ridge black; /* Border around center content. */
+    vertical-align: middle; /* Center all content. */
+    border-width: medium;
+    border-radius: 30px;
+}
+
+html {
+    background: #AB8D64;
+    height: 100%; /* Maintain page height integrity. */
+    display: table; /* Make webpage center in table format. */
+    margin: auto; /* Keep everything centered. */
+    max-width: 70%;
+    min-width: 70%;
+}
+
+/* Squeeze content together enough for white space to show on either side. */
+.theNeverEndingBody {
+    width: 95%;
+    margin: auto; /* Maintain center integrity. */
+}
+
+/* Navigation menu follows user scroll. */
+.nav2 {
+    position: fixed;
+    margin-left: 0px; /* Pull Nav bar icon out of body and html content. */
+    margin-top: 0px;
+    z-index: 5;
+}
+
+/* Logo parameters. */
+#logo1 {
+    position: relative;
+    margin: auto;
+    height: 400px; /* Optimal image size. */
+    width: 100%; /* Optimal image size. */
+    border-radius: 40px;
+    border: 5px solid black;
+    
+
+}
+
+/* Nav icon parameters. */
+#logo2 {
+    position: absolute;
+    height: 150px; /* Optimal image size. */
+    width: 150px; /* Optimal image size. */
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 30px 30px 30px 30px;    
+    
+}
+
+/* Nav hover effects. */
+#logo2:hover {
+    color: black;
+    border: 10px solid black;  
+    box-shadow: 11px 11px black; 
+    opacity: .7;
+}
+
+
+/* Full screen overlay for navigation bar.*/
+.overlay {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    background: black;
+    overflow-x: hidden;
+    z-index: 5;
+    transition: all 0.5s;
+    
+}
+
+/* Center align and make links clickable from all side horizontally. */
+.overlayContent {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Overlay font decoration. */
+.overlay a{
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Overlay hover color. */
+.overlay a:hover{
+    color: blue;
+}
+
+/* Overlay Close button. Top right. */
+.overlay .closeButton{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 40px;
+}
+
+/* Index Container. */
+#indexContainer {
+    height: 500px;
+    background-color: bisque;
+    border: 5px solid black;
+    border-radius: 30px;
+    
+    
+}
+
+
+/* Grid 3x4 main settings. */
+.wrapper {
+    display: grid;
+    grid-template-rows: 3, 1fr;
+    grid-template-columns: 4, 1fr;
+    text-align: center;
+    align-content: center;
+    grid-gap: 20px;
+    min-width: 100%;
+    
+}
+
+/* Grid 2x2 main settings. */
+.wrapper2x2 {
+    display: grid;
+    grid-template-rows: 2, 1fr;
+    grid-template-columns: 2, 1fr;
+    text-align: center;
+    align-content: center;
+    grid-gap: 20px;
+    min-width: 100%;
+    
+}
+#p3container1 {    
+    background-color: tan;
+    grid-column: 1;
+    grid-row: 1;
+    border: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+#p3container2 {
+    background-color: tan;
+    grid-column: 2;
+    grid-row: 1;
+    border: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 10px 10px 10px 10px;
+}    
+#p3container3 {
+    background-color: tan;
+    grid-column: 1;
+    grid-row: 2;
+    border: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+#p3container4 {
+    background-color: tan;
+    grid-column: 2;
+    grid-row: 2;
+    border: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Container 1. */
+#container1 {
+    background-image: url(/Images/me.jpg), url(/Images/me.jpg), url(/Images/me.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 100px top, 500px top, 900px top;
+    background-size: 200px, 200px, 200px;
+    background-blend-mode: color-burn;
+    height: 200px;
+    color: aqua;
+    background-color: tan;
+    grid-column: span 3;
+    grid-row: 1 ;
+    border: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.indexWrapper {
+    display: grid;
+    grid-template-rows: 1, 1fr;
+    grid-template-columns: 1, 1fr;
+    text-align: center;
+    align-content: center;
+    grid-gap: 20px;
+    vertical-align: middle;
+
+}
+/* Index Container. */
+#indexContainer {
+    height: auto;
+    width: auto;
+    font-size: 2.5em;
+    border: 3px solid black;
+}
+/* Container 2. */
+#container2 {
+    color: teal;
+    background-color: tan;
+    grid-column: 1;
+    grid-row: 2 / span 2;
+    border: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 10px 10px 10px 10px;
+
+}
+/* Vertical split. */
+.splitRow {
+    font-size: 2em;
+    flex-flow: column wrap;
+    float: left;
+    margin-left: 50px; 
+    
+}
+/* Reposition drop down menu. */
+#lister{
+    float: left;
+    margin-left: 100px;
+}
+/* Reposition Link. */
+.linker {
+    float: right;
+    margin-right: 30px;
+    font-size: 2em;
+}
+/* Form Rows. */
+.formRow {
+    font-size: 2em;
+    display: flex;
+    margin: 2px 0px;
+    flex-flow: row wrap;
+}
+/* Apply to all rows. */
+.formRow > * {
+    flex: 1 1 30px;
+}
+
+
+/* Text area box dimensions. */
+#comments {
+    display: block;
+    height: 100%;
+    width: 80%;
+}
+
+/* Container for text area box. */
+.blockRow {
+    position: relative;
+    align-items: center;
+    height: 150px; 
+    
+}
+
+/* Container 3. */
+#container3 {
+    color: azure;
+    background-color: tan;
+    grid-row:  2;
+    grid-column: span 2;
+    border: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+/* Container 4. */
+#container4 {
+    background-image: url(Images/TBC2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;    
+    color: aqua;
+    background-color: tan;
+    grid-row:  3;
+    grid-column: 2;
+    border: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Container hover features. */
+#container4:hover{
+    opacity: 1;
+    transform: rotate(359deg);
+
+}
+
+/* Container 5. */
+#container5 {
+    color: teal;
+    background-color: tan;
+    grid-row:  4;
+    grid-column: span 2;
+    border: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 10px 10px 10px 10px;    
+
+
+}
+
+/* Map dimensions. */
+#map {
+    height: 200px;
+    width: 400px;
+    margin: auto;
+}
+
+/* Container 6. */
+#container6 {
+    color: azure;
+    background-color: tan;
+    grid-row:  3 / span 4;
+    grid-column: 3;
+    border: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+/* Check box settings. */
+.checkbox {
+    height: 50px;
+    margin-right: -10px;
+    background-color: blue;
+    
+}
+
+.checkbox2 {
+    height: 100px;
+    width: 50px;
+    float: right;
+    margin-bottom: 100px;
+    
+}
+
+/* Check box checked features.*/
+.checkbox2:checked {
+    transition: 5s;
+    background-color: aqua;
+    opacity: .5; /* Fade away selection. */
+}
+
+/* Check box checked features.*/
+.checkbox:checked {
+    transition: 5s;
+    background-color: aqua;
+    opacity: .5; /* Fade away selection. */
+}
+
+/* Button settings. */
+.button1 {
+    cursor: pointer;
+    max-width: 20%;
+    color: whitesmoke;
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px green;
+    transition: .5s;
+}
+
+.button1:hover{
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 60px;
+    border: 1px solid;
+    box-shadow: 5px 5px 5px 5px blue;
+    height: 50px;
+    transform: rotate(10deg); /* Rotate button. */
+}
+
+
+.button2 {
+    cursor: pointer;
+    max-width: 20%;
+    color: whitesmoke;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px red;
+    transition: .5s;
+}
+
+.button2:hover{
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 60px;
+    border: 1px solid;
+    box-shadow: 5px 5px 5px 5px blue;
+    height: 50px;
+    transform: rotate(-10deg); /* Rotate button. */
+}
+
+/* Grid Paragraphs. */
+.shortP {
+    margin: auto;
+    width: 200px;
+    
+}
+
+#shortP1 {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+#logoP{
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#descP {
+    text-align: center;
+    font-style: oblique;
+    padding: 1px;
+    margin: 10px 10px;
+}
+
+#packageHeader {
+    font-size: 1.4em;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+#item {
+    font-size: 1.3em;
+    
+}
+#ingredients {
+    text-align: left;
+    border-top: 1px solid black;
+    padding-left: 10px;
+    
+}
+
+/* Style the tab buttons */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+#pricer {
+    text-align: right;
+    font-size: 1.2em;
+    margin-right: 10px;
+    line-height: 1%;
+    
+}
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: grey;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Style each tab content individually */ 
+#life {
+    background-color:whitesmoke;
+}
+
+#interest {
+    background-color:whitesmoke;
+}
+
+#hobby {
+    background-color:whitesmoke;
+}
+
+/* Icon Style. */
+.icon {
+    padding: 10px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+/* Icon Roatate. */
+.icon:hover {
+    opacity: 0.7;
+    transform: rotate3d(1, 1, 1, 360deg);
+    transition: 2s; 
+    
+}
+
+.sliderWrapper {
+    
+    width: 35%;
+}
+
+.slider {
+    -webkit-appearance: none; /* Important. */
+    width: 100%;
+    height: 25px;
+    background: black;
+    opacity: .7;
+    border-radius: 20px;
+    border: 5px double #4E4B48;
+}
+
+.slider:hover {
+    opacity: .8;
+    background-color: #514F4D;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Important. */
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:hover {
+	background-color: #CCCBCC;
+}
+
+.slideContainer {
+    position: relative;
+    height: 500px;
+    width: 800px;
+    border: 10px solid black;
+    border-radius: 50px;
+}
+.mySlides {
+    opacity: .7;
+    border-radius: 30px;
+    height: 500px;
+    width: 800px;
+}
+
+.mySlides:hover {
+    opacity: .5;
+    cursor: pointer;
+    transform: rotate3d(1, 1, 1, );
+}
+
+#block1 {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 3em;
+    padding: 5;
+    text-decoration: underline;
+    font-style: oblique;
+    background-color: bisque;
+    border: 5px solid black;
+    border-radius: 40px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    
+}
+
+#block2 {
+    font-size: 2em;
+    text-align: center;
+    font-style: oblique;
+    background-color: bisque;
+    border: 5px solid black;
+    border-radius: 40px;
+    width: 65%;
+    margin: auto;
+}
+
+.blurrSlide {
+    cursor: pointer;
+    border-radius: 30px;
+    filter: blur(2px);    
+    transition: 2s;
+    height: 500px;
+    width: 800px;
+}
+
+.blurrSlide:hover{
+    cursor: pointer;
+    filter: blur(0px);    
+    transition:  .5s;
+} 
+
+.previousButton{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 70%;
+    left: 18%;
+    padding: 10px 50px;
+}
+.nextButton{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 70%;
+    right: 18%;
+    padding: 10px 50px;
+}
+
+.previousButton:hover{
+    cursor: pointer;
+    color: black;
+    background-color: silver;
+}
+.nextButton:hover{
+    cursor: pointer;
+    color: black;
+    background-color: silver;
+}
+
+.displayMid{
+    cursor: pointer;
+    position:absolute;
+    font-size: 2em;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    border: 2px solid black;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+h5 {
+    line-height: 1%;
+}
+.totheright{
+    width: 300px;
+    float: right;
+}
